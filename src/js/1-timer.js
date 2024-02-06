@@ -63,12 +63,11 @@ function onClickStart() {
   const intervalId = setInterval(() => {
     const diff = userSelectedDate - Date.now();
     onTickDisplay(diff);
+    if (diff < 1000) {
+      inputDate.disabled = false;
+      clearInterval(intervalId);
+    }
   }, 1000);
-
-  setTimeout(() => {
-    clearInterval(intervalId);
-    inputDate.disabled = false;
-  }, StartDiff);
 }
 
 let userSelectedDate;

@@ -1,0 +1,41 @@
+.form {
+  max-width: 360px;
+}
+
+.delay {
+  display: flex;
+  flex-direction: column;
+}
+
+.delay > input {
+  margin-bottom: 16px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.state {
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  margin-bottom: 24px;
+  border-radius: 4px;
+}
+
+.form-submit {
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background: #4e75ff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: background 250ms ease-in-out;
+}
+
+.form-submit:hover {
+  background: #6c8cff;
+}
