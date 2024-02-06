@@ -32,6 +32,11 @@ function onFormSubmit(event) {
         icon: '',
       });
     });
+
+  delayInput.value = '';
+  stateInput.forEach(element => {
+    element.checked = false;
+  });
 }
 
 const form = document.querySelector('.form');
